@@ -1,7 +1,7 @@
 'use client'
 
-import { trpc } from '@/app/_trpc/client'
-import { absoluteUrl } from '@/lib/utils'
+import { trpc } from '@/app/_trcp/client'
+// import { absoluteUrl } from '@/lib/utils'
 import {
   QueryClient,
   QueryClientProvider,
@@ -15,7 +15,7 @@ const Providers = ({ children }: PropsWithChildren) => {
     trpc.createClient({
       links: [
         httpBatchLink({
-          url: absoluteUrl("/api/trpc"),
+          url: ("http://localhost:3000/api/trpc"),
         }),
       ],
     })

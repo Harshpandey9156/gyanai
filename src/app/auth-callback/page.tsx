@@ -1,4 +1,5 @@
 import { useRouter ,useSearchParams } from "next/navigation"
+import { trpc } from "../_trcp/client"
 
 const Page= async()=> {
     const router =useRouter()
@@ -9,7 +10,9 @@ const Page= async()=> {
     const apiResponse =await fetch('/api/whatever')
 
 
-    const data  =await apiResponse.json()
+    const data2  =await apiResponse.json()
+    
+    // const {data , isLoading} = trpc.test.useQuery()
 }
 
 export default Page
