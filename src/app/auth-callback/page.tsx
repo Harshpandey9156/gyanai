@@ -12,7 +12,15 @@ const Page= async()=> {
 
     const data2  =await apiResponse.json()
     
-    // const {data , isLoading} = trpc.test.useQuery()
+    const {data , isLoading} = trpc.authCallback.useQuery(undefined,{
+        onSuccess: (response) => {
+            const { success } = response as { success: boolean };
+            if (success) {
+                router.push(origin ?`/${origin}` :'/dashboard');
+              // Handle success
+            }
+        }
+    });
 }
 
 export default Page
