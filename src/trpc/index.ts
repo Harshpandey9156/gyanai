@@ -10,9 +10,9 @@ import { db } from '@/db';
 export const appRouter = router({
   authCallback: publicProcedure.query(async () => {
     const { getUser } = getKindeServerSession();
-    const user =  getUser(); // Await the getUser function
+    const user = await  getUser(); // Await the getUser function
 
-    if (!user.id || !user.email) {
+    if (!user || !user.id || !user.email) {
       throw new TRPCError({ code: 'UNAUTHORIZED' });
     }
 
