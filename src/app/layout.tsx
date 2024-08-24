@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Providers from "@/components/Providers";
 import "react-loading-skeleton/dist/skeleton.css";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en" className="light">
       <Providers>
       <body className={cn('min-h-screen font-saas antialiased grainy',inter.className)}>
+      <Toaster/>
         <Navbar />
         {children}
         </body>
