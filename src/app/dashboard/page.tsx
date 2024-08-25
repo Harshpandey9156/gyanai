@@ -10,7 +10,7 @@ const Page = async () => {
 
   if (!user || !user.id) redirect('/auth-callback?origin=dashboard')
 
-  const dbUser = await db.user.findFirst({
+  const dbUser =  db.user.findFirst({
     where: {
       id: user.id
     }

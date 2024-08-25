@@ -1,5 +1,5 @@
 // import ChatWrapper from '@/components/chat/ChatWrapper'
-// import PdfRenderer from '@/components/PdfRenderer'
+
 import ChatWrapper from '@/components/chat/ChatWrapper'
 import PdfRenderer from '@/components/PdfRenderer'
 import { db } from '@/db'

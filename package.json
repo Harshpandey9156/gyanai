@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
     "@kinde-oss/kinde-auth-nextjs": "^2.3.6",
     "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-dropdown-menu": "^2.1.1",
     "@radix-ui/react-progress": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-toast": "^1.2.1",
@@ -37,6 +39,7 @@
     "react-pdf": "^9.1.0",
     "react-query": "^3.39.3",
     "react-resize-detector": "^11.0.1",
+    "simplebar-react": "^3.2.6",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
     "uploadthing": "^6.13.2",
